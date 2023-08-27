@@ -1,0 +1,23 @@
+# name: Postman Collection Book API automation Test
+# on:
+#   push:
+#     branches: [ main, master ]
+# jobs:
+#   API_Test:
+#     timeout-minutes: 60
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - uses: actions/setup-node@v2
+#       with:
+#         node-version: '16.x'
+#     - name: Install npm dependencies
+#       run: npm install
+#     - name: Run API Test
+#       run: npm run test
+#     - uses: actions/upload-artifact@v2
+#       if: always()
+#       with:
+#         name: Report
+#         path: Report/
+#         retention-days: 30
